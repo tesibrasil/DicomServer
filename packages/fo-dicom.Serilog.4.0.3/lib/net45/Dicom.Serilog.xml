@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Dicom.Serilog</name>
+    </assembly>
+    <members>
+        <member name="T:Dicom.Log.LogLevelConverter">
+            <summary>
+            Support for converting between <see cref="T:Serilog.Events.LogEventLevel"/> and <see cref="T:Dicom.Log.LogLevel"/>.
+            </summary>
+        </member>
+        <member name="M:Dicom.Log.LogLevelConverter.ToSerilog(Dicom.Log.LogLevel)">
+            <summary>
+            Convert from <see cref="T:Dicom.Log.LogLevel"/> to <see cref="T:Serilog.Events.LogEventLevel"/>.
+            </summary>
+            <param name="dicomLogLevel">DICOM log level.</param>
+            <returns>Serilog log event level.</returns>
+        </member>
+        <member name="T:Dicom.Log.SerilogLoggerAdapter">
+            <summary>
+            Implementation of <see cref="T:Dicom.Log.Logger"/> for Serilog.
+            </summary>
+        </member>
+        <member name="M:Dicom.Log.SerilogLoggerAdapter.#ctor(Serilog.ILogger)">
+            <summary>
+            Initializes an instance of <see cref="T:Dicom.Log.SerilogLoggerAdapter"/>
+            </summary>
+            <param name="serilog"></param>
+        </member>
+        <member name="M:Dicom.Log.SerilogLoggerAdapter.Log(Dicom.Log.LogLevel,System.String,System.Object[])">
+            <summary>
+            Log a message to the logger.
+            </summary>
+            <param name="level">Log level.</param>
+            <param name="msg">Log message (format string).</param>
+            <param name="args">Log message arguments.</param>
+        </member>
+        <member name="T:Dicom.Log.SerilogManager">
+            <summary>
+            Directs fo-dicom's logging through Serilog
+            </summary>
+        </member>
+        <member name="M:Dicom.Log.SerilogManager.#ctor">
+            <summary>
+            Instantiates fo-dicom Serilog logging relying on Serilog's Serilog.Log global static logger
+            </summary>
+        </member>
+        <member name="M:Dicom.Log.SerilogManager.#ctor(Serilog.ILogger)">
+            <summary>
+            Instantiates fo-dicom Serilog logging facility, sending logs through the provided ILogger instance
+            </summary>
+            <param name="serilogLogger">Specific Serilog logger to use.</param>
+        </member>
+        <member name="M:Dicom.Log.SerilogManager.GetLoggerImpl(System.String)">
+            <summary>
+            Get logger from the current log manager implementation.
+            </summary>
+            <param name="name">Classifier name, typically namespace or type name.</param>
+            <returns>Logger from the current log manager implementation.</returns>
+        </member>
+    </members>
+</doc>

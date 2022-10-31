@@ -1,0 +1,105 @@
+C-Find request [2]
+--------------------------------------------------------------------------------
+ DIMSE Command:
+--------------------------------------------------------------------------------
+(0000,0000) UL 70                                               #     4, CommandGroupLength
+(0000,0002) UI [1.2.840.10008.5.1.4.31]                         #    22, AffectedSOPClassUID
+(0000,0100) US 32                                               #     2, CommandField
+(0000,0110) US 2                                                #     2, MessageID
+(0000,0700) US 0                                                #     2, Priority
+(0000,0800) US 514                                              #     2, CommandDataSetType
+
+--------------------------------------------------------------------------------
+ DIMSE Dataset:
+--------------------------------------------------------------------------------
+(0008,0020) DA (no value available)                             #     0, StudyDate
+(0008,0030) TM (no value available)                             #     0, StudyTime
+(0008,0050) SH (no value available)                             #     0, AccessionNumber
+(0008,0080) LO (no value available)                             #     0, InstitutionName
+(0008,0090) PN (no value available)                             #     0, ReferringPhysicianName
+(0008,1030) LO (no value available)                             #     0, StudyDescription
+(0008,1032) SQ Procedure Code Sequence
+(0008,1080) LO (no value available)                             #     0, AdmittingDiagnosesDescription
+(0008,1110) SQ Referenced Study Sequence
+(0010,0010) PN (no value available)                             #     0, PatientName
+(0010,0020) LO (no value available)                             #     0, PatientID
+(0010,0021) LO (no value available)                             #     0, IssuerOfPatientID
+(0010,0030) DA (no value available)                             #     0, PatientBirthDate
+(0010,0040) CS (no value available)                             #     0, PatientSex
+(0010,1030) DS (no value available)                             #     0, PatientWeight
+(0010,2000) LO (no value available)                             #     0, MedicalAlerts
+(0010,2110) LO (no value available)                             #     0, Allergies
+(0010,21c0) US (no value available)                             #     0, PregnancyStatus
+(0010,4000) LT (no value available)                             #     0, PatientComments
+(0020,000d) UI (no value available)                             #     0, StudyInstanceUID
+(0020,0010) SH (no value available)                             #     0, StudyID
+(0032,1032) PN (no value available)                             #     0, RequestingPhysician
+(0032,1060) LO (no value available)                             #     0, RequestedProcedureDescription
+(0032,1064) SQ Requested Procedure Code Sequence
+(0038,0010) LO (no value available)                             #     0, AdmissionID
+(0038,0050) LO (no value available)                             #     0, SpecialNeeds
+(0038,0300) LO (no value available)                             #     0, CurrentPatientLocation
+(0038,0500) LO (no value available)                             #     0, PatientState
+(0040,0100) SQ Scheduled Procedure Step Sequence
+  Item:
+    > (0008,0060) CS (no value available)                       #     0, Modality
+    > (0010,2210) CS (no value available)                       #     0, AnatomicalOrientationType
+    > (0032,1070) LO (no value available)                       #     0, RequestedContrastAgent
+    > (0040,0001) AE (no value available)                       #     0, ScheduledStationAETitle
+    > (0040,0002) DA [20211119-20211119]                        #    18, ScheduledProcedureStepStartDate
+    > (0040,0003) TM [000000-000000]                            #    14, ScheduledProcedureStepStartTime
+    > (0040,0006) PN (no value available)                       #     0, ScheduledPerformingPhysicianName
+    > (0040,0007) LO (no value available)                       #     0, ScheduledProcedureStepDescription
+    > (0040,0008) SQ Scheduled Protocol Code Sequence
+    > (0040,0009) SH (no value available)                       #     0, ScheduledProcedureStepID
+    > (0040,0010) SH (no value available)                       #     0, ScheduledStationName
+    > (0040,0011) SH (no value available)                       #     0, ScheduledProcedureStepLocation
+    > (0040,0012) LO (no value available)                       #     0, PreMedication
+(0040,1001) SH (no value available)                             #     0, RequestedProcedureID
+(0040,1002) LO (no value available)                             #     0, ReasonForTheRequestedProcedure
+(0040,1003) SH (no value available)                             #     0, RequestedProcedurePriority
+
+--------------------------------------------------------------------------------
+
+C-Find response [2]: Pending
+--------------------------------------------------------------------------------
+ DIMSE Command:
+--------------------------------------------------------------------------------
+(0000,0002) UI [1.2.840.10008.5.1.4.31]                         #    22, AffectedSOPClassUID
+(0000,0100) US 32800                                            #     2, CommandField
+(0000,0120) US 2                                                #     2, MessageIDBeingRespondedTo
+(0000,0800) US 514                                              #     2, CommandDataSetType
+(0000,0900) US 65280                                            #     2, Status
+
+--------------------------------------------------------------------------------
+ DIMSE Dataset:
+--------------------------------------------------------------------------------
+(0008,0050) SH [1234567890_1]                                   #    12, AccessionNumber
+(0008,0080) LO (no value available)                             #     0, InstitutionName
+(0008,0090) PN (no value available)                             #     0, ReferringPhysicianName
+(0008,1110) SQ Referenced Study Sequence
+  Item:
+(0010,0010) PN [TESTE^TESTE^^]                                  #    14, PatientName
+(0010,0020) LO [987654ABC]                                      #    10, PatientID
+(0010,0030) DA [19911119]                                       #     8, PatientBirthDate
+(0010,0040) CS [M]                                              #     2, PatientSex
+(0010,1030) DS (no value available)                             #     0, PatientWeight
+(0020,000d) UI (no value available)                             #     0, StudyInstanceUID
+(0032,1032) PN (no value available)                             #     0, RequestingPhysician
+(0032,1060) LO [Exame Teste AAAA]                               #    16, RequestedProcedureDescription
+(0038,0010) LO (no value available)                             #     0, AdmissionID
+(0038,0300) LO (no value available)                             #     0, CurrentPatientLocation
+(0040,0100) SQ Scheduled Procedure Step Sequence
+  Item:
+    > (0008,0060) CS [ECG]                                      #     4, Modality
+    > (0040,0001) AE (no value available)                       #     0, ScheduledStationAETitle
+    > (0040,0002) DA [20211119]                                 #     8, ScheduledProcedureStepStartDate
+    > (0040,0003) TM [105200]                                   #     6, ScheduledProcedureStepStartTime
+    > (0040,0006) PN (no value available)                       #     0, ScheduledPerformingPhysicianName
+    > (0040,0007) LO [Exame Teste AAAA]                         #    16, ScheduledProcedureStepDescription
+    > (0040,0009) SH [10001]                                    #     6, ScheduledProcedureStepID
+    > (0040,0010) SH (no value available)                       #     0, ScheduledStationName
+    > (0040,0011) SH (no value available)                       #     0, ScheduledProcedureStepLocation
+(0040,1001) SH [10001]                                          #     6, RequestedProcedureID
+
+--------------------------------------------------------------------------------

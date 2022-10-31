@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DicomServer", "DicomServer\DicomServer.csproj", "{937DEC05-944C-474A-85E1-DC52BA52C882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DicomTool", "DicomTool\DicomTool.csproj", "{5CEF6469-5436-4B32-9E98-51CACC1C95DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DicomClient", "DicomClient\DicomClient.csproj", "{9B2A9BDA-4146-4F1D-B6B0-C91261910823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T-Grabber", "..\T-Grabber\T-Grabber\T-Grabber.csproj", "{00C15635-BDC2-489D-81B0-A60468D2D4DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Crop|Any CPU = Crop|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Crop|Any CPU.ActiveCfg = TEST|Any CPU
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Crop|Any CPU.Build.0 = TEST|Any CPU
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{937DEC05-944C-474A-85E1-DC52BA52C882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Crop|Any CPU.ActiveCfg = TEST|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Crop|Any CPU.Build.0 = TEST|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEF6469-5436-4B32-9E98-51CACC1C95DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Crop|Any CPU.ActiveCfg = TEST|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Crop|Any CPU.Build.0 = TEST|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2A9BDA-4146-4F1D-B6B0-C91261910823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Crop|Any CPU.ActiveCfg = Crop|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Crop|Any CPU.Build.0 = Crop|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C15635-BDC2-489D-81B0-A60468D2D4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B02923F-F24B-4079-8AF7-3EE62DF390EF}
+	EndGlobalSection
+EndGlobal
